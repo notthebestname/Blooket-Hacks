@@ -40,8 +40,7 @@
             });
             axios.put("https://play.blooket.com/api/users/add-rewards", { t, name, addedTokens: 500, addedXp: 300 })
                 .then(({ data: { dailyReward } }) => alert(`Added max tokens and xp, and got ${dailyReward} daily wheel tokens!`))
-                .catch(() => alert('There was an error when adding rewards.'));
-        }
+        
     });
     let img = new Image;
     img.src = "https://raw.githubusercontent.com/05Konz/Blooket-Cheats/main/autoupdate/timestamps/global/getDailyRewards.png?" + Date.now();
